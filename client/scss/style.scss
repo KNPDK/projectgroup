@@ -1,5 +1,2 @@
-$color: green;
-
-body {
-  background-color: $color;
-}
+@import './base.scss';
+@import './login-page.scss';

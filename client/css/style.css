@@ -1,2 +1,38 @@
 body {
-  background-color: green; }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.login-wrapper {
+  background-color: #f8f8f8; }
+
+.login-container {
+  background-color: #fff;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .login-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: arial, sans-serif; }
+  .login-container form {
+    display: flex;
+    flex-direction: column; }
+    .login-container form label {
+      font-size: 18px;
+      margin: 10px 0 0 0; }
+    .login-container form button {
+      font-size: 18px;
+      width: 100px;
+      height: 40px;
+      background-color: #008000;
+      color: #fff;
+      margin: 16px auto 0 auto;
+      border: none;
+      border-radius: 8px; }
