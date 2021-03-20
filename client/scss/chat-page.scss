@@ -1,0 +1,41 @@
+@import './colors.scss';
+
+.sidebar {
+    height: 100%;
+    flex: .3;
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.content {
+    flex: .7;
+
+    .input-container {
+        display: flex;
+        justify-content: center;
+
+        input {
+            position: fixed;
+            bottom: 30px;
+            width: 60%;
+            padding: 20px;
+            border-radius: 3px;
+            border: 1px solid gray;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.content-header {
+    border-bottom: 1px solid gray;
+
+    h3 {
+        margin: 0;
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+}
+

@@ -1,12 +1,14 @@
+@import './colors.scss';
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: arial, sans-serif;
 }
 
 .wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: $wrapper-background;
     height: 100vh;
 }

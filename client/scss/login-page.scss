@@ -1,7 +1,8 @@
 @import './colors.scss';
 
 .login-wrapper {
-    background-color: $login-background;
+    align-items: center;
+    justify-content: center;
 }
 
 .login-container {
@@ -13,7 +14,6 @@
     h1 {
         text-align: center;
         text-transform: uppercase;
-        font-family: arial, sans-serif;
     }
 
     form {
