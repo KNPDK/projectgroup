@@ -41,10 +41,32 @@ body {
   height: 100%;
   flex: .3;
   background-color: #3135A3;
-  color: #fff; }
+  color: #fff;
+  font-size: 18px;
+  overflow-y: scroll; }
+
+.profile {
+  padding: 15px;
+  font-weight: 900;
+  border-bottom: 1px solid #6367EB; }
+  .profile p {
+    margin: 16px 0; }
+
+.channels-list {
+  padding: 0 15px;
+  border-bottom: 1px solid #6367EB; }
+  .channels-list p {
+    margin: 0;
+    padding: 16px 0; }
+    .channels-list p:first-child {
+      font-weight: 900; }
+  .channels-list .channels-list-item {
+    font-size: 14px; }
 
 .content {
-  flex: .7; }
+  flex: .7;
+  overflow-y: scroll;
+  padding: 0 0 120px 0; }
   .content .input-container {
     display: flex;
     justify-content: center; }
@@ -62,5 +84,12 @@ body {
   border-bottom: 1px solid gray; }
   .content-header h3 {
     margin: 0;
-    padding: 20px 20px;
+    padding: 31px 20px;
     font-size: 18px; }
+
+.message {
+  padding: 20px; }
+  .message h4 {
+    margin: 0; }
+  .message p {
+    margin: 0; }

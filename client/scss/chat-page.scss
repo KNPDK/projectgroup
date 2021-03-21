@@ -5,10 +5,41 @@
     flex: .3;
     background-color: $primary-color;
     color: #fff;
+    font-size: 18px;
+    overflow-y: scroll;
+}
+
+.profile {
+    padding: 15px;
+    font-weight: 900;
+    border-bottom: 1px solid $secondary-color;
+
+    p {
+        margin: 16px 0;
+    }
+}
+
+.channels-list {
+    padding: 0 15px;
+    border-bottom: 1px solid $secondary-color;
+
+    p {
+        margin: 0;
+        padding: 16px 0;
+
+        &:first-child {
+            font-weight: 900;
+        }
+    }
+    .channels-list-item {
+        font-size: 14px;
+    }
 }
 
 .content {
     flex: .7;
+    overflow-y: scroll;
+    padding: 0 0 120px 0;
 
     .input-container {
         display: flex;
@@ -34,8 +65,19 @@
 
     h3 {
         margin: 0;
-        padding: 20px 20px;
+        padding: 31px 20px;
         font-size: 18px;
     }
 }
 
+.message {
+    padding: 20px;
+
+    h4 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
