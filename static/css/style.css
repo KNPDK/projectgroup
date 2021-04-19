@@ -7,7 +7,38 @@ body {
 .wrapper {
   display: flex;
   background-color: #f8f8f8;
-  height: 100vh; }
+  height: 100vh;
+  background-color: #3135A3; }
+
+.navigation {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .navigation div {
+    width: 55%;
+    display: flex;
+    justify-content: space-around; }
+
+.primary-btn {
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #EBCC4B;
+  height: 36px; }
+  .primary-btn a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px; }
+  .primary-btn:hover {
+    transform: scale(1.1);
+    transition: .2s; }
+  .primary-btn:focus {
+    outline: none; }
+  .primary-btn.red-btn {
+    background-color: #EB7D7A; }
 
 .welcome-wrapper {
   align-items: flex-start;
@@ -17,12 +48,16 @@ body {
 .welcome-container {
   background-color: #fff;
   padding: 0 54px 20px;
-  border-radius: 10px; }
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .welcome-container ul {
     padding: 0 0 0 20px;
     list-style-type: disclosure-closed; }
     .welcome-container ul a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #000; }
 
 .form-wrapper {
   align-items: center;
@@ -38,7 +73,8 @@ body {
     text-transform: uppercase; }
   .form-container form {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-bottom: 20px; }
     .form-container form label {
       font-size: 18px;
       margin: 10px 0 0 0; }
@@ -51,6 +87,10 @@ body {
       margin: 16px auto 0 auto;
       border: none;
       border-radius: 8px; }
+  .form-container.create-room-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .sidebar {
   height: 100%;
@@ -86,23 +126,12 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px; }
-  .sidebar-button-row .sidebar-button {
-    font-size: 14px;
-    font-weight: bold;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #EBCC4B; }
-    .sidebar-button-row .sidebar-button:hover {
-      transform: scale(1.1);
-      transition: .2s; }
-    .sidebar-button-row .sidebar-button:focus {
-      outline: none; }
 
 .content {
   flex: .7;
   overflow-y: scroll;
-  padding: 0 0 120px 0; }
+  padding: 0 0 120px 0;
+  background-color: #f8f8f8; }
   .content .input-container {
     display: flex;
     justify-content: center; }

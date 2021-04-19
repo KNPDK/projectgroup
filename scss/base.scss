@@ -11,4 +11,47 @@ body {
     display: flex;
     background-color: $wrapper-background;
     height: 100vh;
+    background-color: $primary-color;
+}
+
+.navigation {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        width: 55%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.primary-btn {
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: $yellow;
+    height: 36px;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        padding: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: .2s;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.red-btn {
+        background-color: $light-red;
+    }
 }

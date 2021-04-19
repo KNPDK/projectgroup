@@ -47,30 +47,13 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-
-    .sidebar-button {
-        font-size: 14px;
-        font-weight: bold;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: $yellow;
-
-        &:hover {
-            transform:scale(1.1);
-            transition: .2s;
-        }
-
-        &:focus {
-            outline: none;
-        }
-    }
 }
 
 .content {
     flex: .7;
     overflow-y: scroll;
     padding: 0 0 120px 0;
+    background-color: $wrapper-background;
 
     .input-container {
         display: flex;
