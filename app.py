@@ -5,12 +5,14 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from flask_socketio import SocketIO, join_room, leave_room
 from pymongo.errors import DuplicateKeyError
+from flask_cors import CORS
 
 from db import get_user, save_user, save_room, add_room_members, get_rooms_for_user, get_room, is_room_member, \
     get_room_members, is_room_admin, update_room, remove_room_members, save_message, get_messages
 
 app = Flask(__name__)
 app.secret_key = "sfdjkafnk"
+cors = CORS(app, resources={r"/*":{"origins":"*"}})
 socketio = SocketIO(app)
 login_manager = LoginManager()
 login_manager.login_view = 'login'
@@ -180,4 +182,4 @@ def load_user(username):
 
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app, host='0.0.0.0')
