@@ -57,7 +57,7 @@
     <script src="//chatapp.ros-design.com/static/js/socket.io.js"></script>
     <script>
         {#const socket = io.connect("//chatapp.ros-design.com");#}
-        const socket = io.connect("//localhost");
+        const socket = io.connect("//localhost:5000");
 
         socket.on('connect', function () {
             socket.emit('join_room', {
