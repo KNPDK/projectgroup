@@ -2,19 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./../static/css/style.css">
     <title>My Chat App</title>
 </head>
 <body>
-<h1>My Chat App</h1>
-<h3>Hi {% if current_user.is_authenticated %}{{ current_user.username }}{% else %}Guest{% endif %}!</h3>
-
-{% if current_user.is_authenticated %}
-    <h3>My rooms</h3>
-    <ul>
-        {% for room in rooms %}
-            <li><a href="/rooms/{{ room._id.room_id }}">{{ room.room_name }}</a></li>
-        {% endfor %}
-    </ul>
-{% endif %}
+    <div class="wrapper welcome-wrapper">
+        <div class="welcome-container">
+            <h1>My Chat App</h1>
+            <h3>Hi {% if current_user.is_authenticated %}{{ current_user.username }}{% else %}Guest{% endif %}!</h3>
+            
+            {% if current_user.is_authenticated %}
+                <h3>My rooms</h3>
+                <ul>
+                    {% for room in rooms %}
+                        <li><a href="/rooms/{{ room._id.room_id }}">{{ room.room_name }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
 </body>
 </html>
