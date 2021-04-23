@@ -54,10 +54,11 @@
         </div>
     </div>
     <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.0/socket.io.js"></script>
+    <script src="//chatapp.ros-design.com/static/js/socket.io.js"></script>
     <script>
+        {#const socket = io.connect("//chatapp.ros-design.com");#}
         const socket = io.connect("//localhost:5000");
-    
+
         socket.on('connect', function () {
             socket.emit('join_room', {
                 username: "{{ username }}",
